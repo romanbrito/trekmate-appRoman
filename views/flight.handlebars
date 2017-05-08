@@ -1,27 +1,27 @@
-<!--<div id="flightbox">-->
-    <!--<a href="#" id="prev_btn">&laquo;</a>-->
-    <!--<a href="#" id="next_btn">&raquo;;</a>-->
-    <!--<div id="carousel">-->
-        <!--<ul>-->
-            <!--{{#each flights}}-->
-                <!--<li>-->
-                    <!--{{this.flight_number}}-->
-                <!--</li>-->
-            <!--{{/each}}-->
-        <!--</ul>-->
-    <!--</div>-->
-<!--</div>-->
-
-
 <div id="flightbox">
     <a href="#" id="prev_btn">&laquo;</a>
     <a href="#" id="next_btn">&raquo;;</a>
     <div id="carousel">
         <ul>
-
+            {{#each flights}}
                 <li>
-                    {{flightStatus.flightStatuses.[0].flightId}}
+                    {{this.flight_number}}
                 </li>
+            {{/each}}
         </ul>
     </div>
 </div>
+
+
+<!--<div id="flightbox">-->
+    <!--<a href="#" id="prev_btn">&laquo;</a>-->
+    <!--<a href="#" id="next_btn">&raquo;;</a>-->
+    <!--<div id="carousel">-->
+        <!--<ul>-->
+
+                <!--<li>-->
+                    <!--{{flightStatus.flightStatuses.[0].flightId}}-->
+                <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->

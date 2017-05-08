@@ -30,6 +30,16 @@ function FlightQueryURL(APIname, protocol, version, format, parameters, options)
 //     res.render("flight", hbsObject);
 // });
 
+
+router.post("/flights", function (req, res) {
+    db.Flight.create({
+        flight_number: req.body.FlightNumber
+    }).then(function (dbFlight) {
+        res.redirect("/");
+    });
+});
+
+
 router.get("/flights", function (req, res) {
 
     // read tripid cookie
