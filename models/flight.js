@@ -5,7 +5,7 @@ module.exports = function (sequelize, Datatypes) {
                 allowNull: false
             },
             flight_date: {
-                type: Datatypes.DATE,
+                type: Datatypes.DATEONLY,
                 allowNull: true
             },
             city_departure: {
