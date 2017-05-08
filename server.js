@@ -49,7 +49,7 @@ app.use(require('./controllers/api_flight'));
 // force: true to allow structure modifications in our database,
 // this is the case with associations
 
-db.sequelize.sync({ force: true }).then(function () {
+db.sequelize.sync({ force: false }).then(function () {
     var server = app.listen(app.get('port'), function () {
         console.log('Listening on port ' + app.get('port'));
     });
