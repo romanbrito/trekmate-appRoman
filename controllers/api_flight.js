@@ -24,14 +24,6 @@ function FlightQueryURL(APIname, protocol, version, format, parameters, options)
     return queryURL;
 }
 
-// db.Flight.findAll().then(function (dbFlight) {
-//     var hbsObject = {
-//       flights: dbFlight
-//     };
-//     res.render("flight", hbsObject);
-// });
-
-
 router.post("/flights", function (req, res) {
     db.Flight.create({
         flight_number: req.body.FlightNumber
@@ -52,20 +44,24 @@ router.get("/flights", function (req, res) {
             TripId: TripId
         }
     }).then(function (dbFlight) {
-        // var hbsObject = [{
-        //     flights: dbFlight
-        // }];
+
         // flight api
 
         var flightDate = dbFlight[0].flight_date;
 
+        var flightNumber = dbFlight[0].flight_number;
+        var flightNumberArrStr = flightNumber.split(" ");
+        var airlineCode = flightNumberArrStr[0];
+        var flight = flightNumberArrStr[1];
         flightDate = dateFormat(flightDate, "yyyy/m/d");
 
         // console.log(flightDate);
+        // console.log(airlineCode);
+        // console.log(flight);
 
-        // flightDate = "2017/5/5";
 
-        var parameters = "flight/status/" + "AA" + "/" + "5919" + "/arr/" + flightDate;
+        var parameters = "flight/status/" + airlineCode + "/" + flight + "/arr/" + flightDate;
+
         var url = FlightQueryURL("flightstatus", "rest", "v2", "json", parameters, "", "flightInfo");
 
         var request = https.get(url, function (response) {
@@ -76,65 +72,15 @@ router.get("/flights", function (req, res) {
             });
 
             response.on("end", function (err) {
-                // console.log(buffer);
-                // console.log("\n");
                 var hbsObject = {
                     flights: dbFlight,
                     flightStatus: JSON.parse(buffer)
                 };
-
-                // data = {
-                //     flightStatus: JSON.parse(buffer)
-                // };
-                //res.json(data);
-                // hbsObject.push(data);
-                res.json(hbsObject);
-                // res.render("flight", hbsObject);
-                // console.log(data);
+                // res.json(hbsObject);
+                res.render("flight", hbsObject);
             });
         });
-
-        // res.render("index", hbsObject);
-        // res.json(hbsObject);
     });
 });
-
-
-// router.get("/flights", function (req, res) {
-//     // res.send("<h1>Flights API</h1>");
-//
-//
-//     var parameters = "flight/status/" + "AA" + "/" + "5919" + "/arr/" + "2017/5/6";
-//     var url = FlightQueryURL("flightstatus", "rest", "v2", "json", parameters, "", "flightInfo");
-//
-//     var request = https.get(url, function (response) {
-//         var buffer = "",
-//             data;
-//         response.on("data", function (chunk) {
-//             buffer += chunk;
-//         });
-//
-//         response.on("end", function (err) {
-//             // console.log(buffer);
-//              // console.log("\n");
-//             data = JSON.parse(buffer);
-//             res.json(data);
-//         });
-//     });
-// });
-
-
-// router.get("/flights", function (req, res) {
-//     // res.send("<h1>Flights API</h1>");
-//
-//     db.Flight.findAll().then(function (dbFlight) {
-//         var hbsObject = {
-//           flights: dbFlight
-//         };
-//         // res.render("flight", hbsObject);
-//
-//         res.json((hbsObject));
-//     });
-// });
 
 module.exports = router;
