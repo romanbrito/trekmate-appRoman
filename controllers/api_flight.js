@@ -4,6 +4,7 @@ var http = require('http');
 var https = require('https');
 var db = require("../models");
 var config = require('../config/config.json');
+var dateFormat = require('dateformat');
 
 function FlightQueryURL(APIname, protocol, version, format, parameters, options) {
 
@@ -55,24 +56,14 @@ router.get("/flights", function (req, res) {
         //     flights: dbFlight
         // }];
         // flight api
-        // var flightDate = dbFlight[0].flight_date.toString();
-        // console.log(flightDate);
-        // var arrStr = flightDate.split("-");
-        // var year = arrStr[0];
-        // var month = arrStr[1];
-        // var day = arrStr[2];
-        // var arrMonth = month.split("");
-        // if (arrMonth[0] === "0") {
-        //     month = arrMonth[1];
-        // }
-        // var arrDay = day.split("");
-        // if (arrDay[0] === "0") {
-        //     day = arrDay[1];
-        // }
-        //
-        // flightDate = year + "/" + month + "/" + day;
 
-        flightDate = "2017/5/5";
+        var flightDate = dbFlight[0].flight_date;
+
+        flightDate = dateFormat(flightDate, "yyyy/m/d");
+
+        // console.log(flightDate);
+
+        // flightDate = "2017/5/5";
 
         var parameters = "flight/status/" + "AA" + "/" + "5919" + "/arr/" + flightDate;
         var url = FlightQueryURL("flightstatus", "rest", "v2", "json", parameters, "", "flightInfo");
