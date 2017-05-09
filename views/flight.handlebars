@@ -6,22 +6,15 @@
             {{#each flights}}
                 <li>
                     {{this.flight_number}}
+
+                    <form action="/flightStats" method="POST">
+                        <input type="text" name="flightNumber" value={{this.flight_number}}>
+                        <input type="text" name="flightDate" value={{this.flight_date}}>
+                        <button class="button submit-btn" type="submit">Flight Informaion</button>
+                    </form>
                 </li>
             {{/each}}
         </ul>
     </div>
 </div>
 
-
-<div id="flightbox">
-    <a href="#" id="prev_btn">&laquo;</a>
-    <a href="#" id="next_btn">&raquo;;</a>
-    <div id="carousel">
-        <ul>
-
-                   <li>{{flightStatus.flightStatuses.[0].flightId}}</li>
-                   <li>{{flightStatus.flightStatuses.[0].departureAirportFsCode}}</li>
-                   <li>{{flightStatus.flightStatuses.[0].arrivalAirportFsCode}}</li>
-        </ul>
-    </div>
-</div>
