@@ -8,8 +8,8 @@
                     {{this.flight_number}}
 
                     <form action="/flightStats" method="POST">
-                        <input type="text" name="flightNumber" value={{this.flight_number}}>
-                        <input type="text" name="flightDate" value={{this.flight_date}}>
+                        <input type="hidden" name="flightNumber" value="{{this.flight_number}}">
+                        <input type="hidden" name="flightDate" value="{{this.flight_date}}">
                         <button class="button submit-btn" type="submit">Flight Informaion</button>
                     </form>
                 </li>
