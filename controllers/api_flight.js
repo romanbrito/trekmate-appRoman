@@ -73,7 +73,7 @@ router.get("/flights", function (req, res) {
             flights: dbFlight
         };
         // res.json(hbsObject);
-        res.render("flight", hbsObject);
+        res.render("index", hbsObject);
     });
 });
 
@@ -83,7 +83,7 @@ var flightDate = req.body.flightDate;
     console.log(flightNumber);
     console.log(flightDate);
     apiObject(flightNumber, flightDate, function (data) {
-        res.render("flightStats", data);
+        res.render("index", data);
         // res.json(data);
     });
 });

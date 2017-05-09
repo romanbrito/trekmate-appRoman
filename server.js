@@ -33,7 +33,19 @@ app.use(methodOverride("_method"));
 // set handlebars
 var exphbs = require('express-handlebars');
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+var hbs = exphbs.create({
+    // helpers : helpers,
+    defaultLayout: 'main',
+    partialsDir: [
+     //   'shared/templates/',
+        'views/partials/'
+    ]
+});
+
+//  Instead of this we are using the previous, notice defaultLayout
+// app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 // favicon in /public
