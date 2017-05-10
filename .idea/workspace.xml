@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c58939d-55a2-48e2-8e3b-8ce3ea291c9a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/cover.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/frontpage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/frontpage.handlebars" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partials/page/modal.handlebars" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/partials/page/navegation.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/trekmate_controller.js" afterPath="$PROJECT_DIR$/controllers/trekmate_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.handlebars" afterPath="$PROJECT_DIR$/views/index.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,14 +16,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5048611">
+    <splitter split-orientation="horizontal" split-proportion="0.29583332">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="index.handlebars" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.handlebars" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.handlebars">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -48,20 +39,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="frontPage.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/html/frontPage.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="678">
-                  <caret line="157" column="10" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="157" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#3141#3147#0" expanded="true" />
-                    <element signature="e#3557#3564#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="frontpage.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="frontpage.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/css/frontpage.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
@@ -85,7 +63,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="api_flight.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="api_flight.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controllers/api_flight.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="459">
@@ -95,11 +73,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="frontpage.handlebars" pinned="false" current-in-tab="false">
+          <file leaf-file-name="frontpage.handlebars" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/frontpage.handlebars">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
+                <state relative-caret-position="338">
+                  <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
                   <folding>
                     <element signature="e#1722#1728#0#HTML" expanded="true" />
                     <element signature="e#2138#2145#1#HTML" expanded="true" />
@@ -150,8 +128,8 @@
         <option value="$PROJECT_DIR$/views/partials/page/frontpage.handlebars" />
         <option value="$PROJECT_DIR$/views/layouts/main.handlebars" />
         <option value="$PROJECT_DIR$/controllers/trekmate_controller.js" />
-        <option value="$PROJECT_DIR$/views/index.handlebars" />
         <option value="$PROJECT_DIR$/public/css/frontpage.css" />
+        <option value="$PROJECT_DIR$/views/index.handlebars" />
       </list>
     </option>
   </component>
@@ -480,7 +458,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44430000" />
+    <option name="totallyTimeSpent" value="44621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
@@ -874,25 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/frontpage.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="74" column="38" lean-forward="true" selection-start-line="74" selection-start-column="38" selection-end-line="74" selection-end-column="38" />
-          <folding>
-            <element signature="e#1722#1728#0#HTML" expanded="true" />
-            <element signature="e#2138#2145#1#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/flight.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -930,6 +889,25 @@
         <state relative-caret-position="238">
           <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/frontpage.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding>
+            <element signature="e#1722#1728#0#HTML" expanded="true" />
+            <element signature="e#2138#2145#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
