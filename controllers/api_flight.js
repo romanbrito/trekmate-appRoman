@@ -83,7 +83,7 @@ var flightDate = req.body.flightDate;
     console.log(flightNumber);
     console.log(flightDate);
     apiObject(flightNumber, flightDate, function (data) {
-        res.render("index", data);
+        res.render("dashboard", data);
         // res.json(data);
     });
 });
