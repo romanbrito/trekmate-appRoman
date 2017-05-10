@@ -5,7 +5,7 @@ var db = require("../models");
 // routes
 
 router.get("/", function (req, res) {
-  res.render("index");
+  res.render("frontpage");
 });
 
 // router.get("/api/")

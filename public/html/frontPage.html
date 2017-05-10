@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TrekMate | Enjoy the Journey</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-G3G7OsJCbOk1USkOY4RfeX1z27YaWrZ1YuaQ5tbuawed9IoreRDpWpTkZLXQfPm3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Weather icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="../../css/cover.css">
+
+    <style>
+
+        #logo {
+            max-width: 200px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        .promo video {
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<!--<div class="promo">-->
+<!--<video autoplay="autoplay">-->
+<!--<source src="../img/frontPage_6.mp4" type="video/mp4">-->
+<!--</video>-->
+
+<!--<img src="../img/logo.png" alt="logo">-->
+
+
+<!--</div>-->
+
+<div class="site-wrapper">
+    <div class="promo">
+        <video autoplay="autoplay">
+            <source src="../img/frontPage_6.mp4" type="video/mp4">
+        </video>
+        <img class="frontpage" id="logo" src="../img/logo.png" alt="logo">
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Trekmate</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#signInModal">Sign in
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#signUpModal">Sign Up
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#aboutModal">About
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Copyright &copy; 2017 Trekmate </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--Sign in Modal-->
+        <div id="signInModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Sign In</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/" method="post">
+                            <label for="inputUser">
+                                <span>Enter User id</span>
+                            </label>
+                            <input id="inputUser" type="text" name="user_name" value="user">
+                            <label for="passwordUser">
+                                <span class="actAsPara">Enter password</span>
+                            </label>
+                            <input id="passwordUser" type="password" name="user_password" value="password">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--sign up Modal-->
+        <div id="signUpModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Sign Up</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Form Goes Here</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--About Modal-->
+        <div id="aboutModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">About</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Form Goes Here</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="js/flights.js"></script>
+</html>
+
+
+
+
+

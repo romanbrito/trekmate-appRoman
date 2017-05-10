@@ -1,0 +1,15 @@
+#logo {
+    max-width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.promo video {
+    width: 100%;
+}
+
+.modal-content {
+    background: grey;
+}
