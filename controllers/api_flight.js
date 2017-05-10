@@ -57,7 +57,7 @@ router.post("/flights", function (req, res) {
 });
 
 
-router.get("/flights", function (req, res) {
+router.get("/dashboard", function (req, res) {
 
     // read tripid cookie
     var TripId = 1;
@@ -73,7 +73,7 @@ router.get("/flights", function (req, res) {
             flights: dbFlight
         };
         // res.json(hbsObject);
-        res.render("index", hbsObject);
+        res.render("dashboard", hbsObject);
     });
 });
 

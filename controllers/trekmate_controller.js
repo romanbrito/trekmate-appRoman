@@ -8,7 +8,8 @@ router.get("/", function (req, res) {
   res.render("frontpage");
 });
 
-// router.get("/api/")
-
+router.post("/dashboard", function (req, res) {
+    res.render("dashboard");
+});
 
 module.exports = router;
